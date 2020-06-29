@@ -2,6 +2,7 @@ package JRYGJOB
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"log"
 	"time"
