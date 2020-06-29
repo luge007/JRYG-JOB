@@ -1,6 +1,7 @@
 module github.com/luge007/JRYGJOB
 
-go 1.14
+go 1.12
+
 
 require (
 	github.com/coreos/etcd v3.3.13+incompatible
