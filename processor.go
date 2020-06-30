@@ -52,11 +52,14 @@ func NewJobSnapshotProcessor(group, ip string, etcd *Etcd) *JobSnapshotProcessor
 func (processor *JobSnapshotProcessor) lookup() {
 
 	for {
+		log.Printf("开始监听任务")
 
 		select {
 		case snapshot := <-processor.snapshots:
+			log.Printf("开始处理任务")
 
 			go processor.handleSnapshot(snapshot)
+			log.Printf("任务处理完成")
 
 		}
 	}
