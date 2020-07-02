@@ -3,19 +3,16 @@ package dic
 type serverName string
 
 const (
+	Account    serverName = "account"
+	Atm        serverName = "atm"
+	Bigdata    serverName = "bigdata"
 	Business   serverName = "business"
-	Dispatcher serverName = "dispatcher"
-
-	Driver serverName = "driver"
-
-	Order serverName = "order"
-
-	Atm serverName = "atm"
-
-	Charge  serverName = "charge"
-	Bigdata serverName = "bigdata"
-
+	Charge     serverName = "charge"
 	Dictionary serverName = "dictionary"
-
-	Account serverName = "account"
+	Dispatcher serverName = "dispatcher"
+	Message    serverName = "message"
+	Resource   serverName = "resource"
+	Risk       serverName = "risk"
+	Order      serverName = "order"
+	Pay        serverName = "pay"
 )
